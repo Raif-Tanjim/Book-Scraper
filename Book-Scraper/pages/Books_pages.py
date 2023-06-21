@@ -8,7 +8,6 @@ from parsers.Books_parser import BookParser
 class Bookspage:
     def __init__(self, page):
         self.soup = BeautifulSoup(page, 'html.parser')
-
     @property
     def books(self):
         locator = Bookspagelocator.Books
